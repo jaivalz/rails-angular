@@ -39,3 +39,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Angular + Rails
 gem 'angular-rails-templates'
+
+# responds
+gem 'responders', '~> 2.0' 
