@@ -45,3 +45,6 @@ gem 'angular_rails_csrf'
 
 # responds
 gem 'responders', '~> 2.0'
+
+# devise for users
+gem 'devise', '~> 3.4.0'
