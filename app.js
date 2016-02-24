@@ -1,4 +1,4 @@
-var app = angular.module('flapperNews', ['ui.router']);
+var app = angular.module('jangular', ['ui.router']);
 
 app.config([
   '$stateProvider',
@@ -46,8 +46,8 @@ app.controller('MainController', [
           link: $scope.link,
           upvotes: 0,
           comments: [
-            { author: 'Joe', body: 'Cool post!', upvotes: 0 },
-            { author: 'Bob', body: 'Bad post!',  upvotes: 0 }
+            { author: 'Ra', body: 'Manta!', upvotes: 5 },
+            { author: 'An', body: 'Guapo!',  upvotes: 10 }
           ]
         });
         $scope.title = '';
