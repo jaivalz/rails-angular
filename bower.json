@@ -1,0 +1,19 @@
+{
+  "name": "rails-angular",
+  "homepage": "https://github.com/jaivalz/rails-angular",
+  "authors": [
+    "Jaime <jaivalz@yahoo.com>"
+  ],
+  "description": "bower example for the app",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
