@@ -1,13 +1,16 @@
 class PostsController < ApplicationController
   before_filter :authenticate_user!, only: [:create, :upvote]
 
+  def as_json(options = {})
+    super(options.merge(include: [:user, comments: {include: :user}]))
+  end
 
   def index
     respond_with Post.all
   end
 
   def create
-    respond_with Post.create(post_params)
+    respond_with Post.create(post_params.merge(user_id: current_user.id))
   end
 
   def show
@@ -22,8 +25,7 @@ class PostsController < ApplicationController
   end
 
   private
-    def post_params
-      params.require(:post).permit(:link, :title)
+  def post_params
+    params.require(:post).permit(:link, :title)
   end
-
 end
